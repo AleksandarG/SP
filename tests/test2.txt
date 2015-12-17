@@ -1,0 +1,19 @@
+.global a
+.extern b
+.text 90
+	ldcl r1, a#komentar
+a:	je x
+	.long m
+c:	.skip 3#komentar2323
+.data1
+	.long 16, b
+x:	.char 1, 6, d
+	.wordh x, 131071#okfodaksof
+	.skip 5
+m:	.align 8
+	.global c
+.end
+	mov r4, r2
+asdfdasfkjas
+dsfas
+fds

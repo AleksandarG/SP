@@ -1,0 +1,21 @@
+.global a, b
+.text 56 #text sekcija
+	je a
+a:	jmp [x]
+c:	call poziv
+	jne lok
+lok:	jge g
+.data39 23
+	.long a
+	.char 98
+x:	.wordl c
+.text1
+poziv:	push psw #stavlja psw na stek
+b:	ret 8
+.text 7
+	ldc r2, c
+	mov r3, r5
+.bss
+g:	.skip 3
+.end
+	in r4, r6

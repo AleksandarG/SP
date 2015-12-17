@@ -1,0 +1,17 @@
+.global a, b
+.text 56 #text sekcija
+	add r5, r3, 10
+a:	sub r4, r3, 63
+c:	and r8, r10
+.data9 55
+	.long a
+	.wordl c
+.text1
+	push psw #stavlja psw na stek
+b:	pop r0
+.text4 989
+	ldc r2, c
+	mov r3, r5
+.bss
+	.skip 10
+.end
